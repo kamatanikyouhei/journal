@@ -1,0 +1,13 @@
+<h1>投稿フォーム</h1>
+<%= form_with model: @article, local: true do |form| %>
+  <p>
+    論文名：<br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    本文：<br>
+    <%= form.text_area :body %>
+  </p>
+  
+  <%= form.submit "登録" %>
+<% end %>

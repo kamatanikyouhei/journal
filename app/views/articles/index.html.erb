@@ -1,0 +1,7 @@
+<h1>出品商品一覧</h1>
+<ul>
+  <% @articles.each do |article| %>
+    <li><a href="/articles/<%= article.id %>"><%= article.name %></a></li>
+  <% end %>
+</ul>
+<%= link_to "投稿する", new_article_path %>
